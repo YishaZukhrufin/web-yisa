@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="imagelogo">
+            <img class="imag" src="img/317-3179458_clipart-vegetables-leafy-vegetable-vegetables-logo-png.png">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a id="button-contact">Contact Us</a></li>
+            <a class="sosmed" href="https://api.whatsapp.com/send?phone=085606224256" target="_blank">WhatsApp</a>
+            <a class="sosmed" href="http://www.instagram.com/yishangly" target="_blank">Instagram</a>
+            <a class="sosmed" href="https://youtube.com/channel/UCeB5N0VeL-BIe9_6LhpXaVQ" target="_blank">Youtube</a>
+            <a class="sosmed" href="http://www.pinterest.com/yishaangeli" target="_blank">Pinteres</a>
+        </ul>
+    </div>
+
+    <div class="wrep">
+        <div class="teks">
+            <div class="header">
+                <h1>Brokoli <span>Vegetable</span></h1>
+            </div>
+            <p>Mengenal sayur Brokoli</p>
+            <p>yang didalamnya memiliki</p>
+            <p>berbagai kadungan dan manfaat </p>
+        </div>
+        <div class="image1">
+            <img src="img/brokoli.png" alt="">
+        </div>
+    </div>
+
+
+
+    <h1 class="header2" id="about"><br><br> About <span> Us</span></h1>
+    <div class="about">
+        <!-- <div class="slides">  -->
+        <div class="slider">
+            <div class="slider0">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slidee one">
+                    <img src="img/fot1.jpg" alt="">
+                </div>
+                <div class="slidee">
+                    <img src="img/fot2.jpg" alt="">
+                </div>
+                <div class="slidee">
+                    <img src="img/fot3.jpg" alt="">
+                </div>
+                <div class="slidee">
+                    <img src="img/fot4.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual1"></label>
+                <label for="radio2" class="manual1"></label>
+                <label for="radio3" class="manual1"></label>
+                <label for="radio4" class="manual1"></label>
+            </div>
+
+        </div>
+
+        <div class="teks01">
+            <p><b>Broccoli</b></p>
+            Brokoli merupakan tanaman hijau dari
+            famili Brassicaceae yang bunga dan
+            tangkainya dikonsumsi sebagai sayuran
+            Brokoli bisa dimasak,direbus yang berguna
+            untuk mengurangi resiko osteoporosis maupun
+            hanya sekedar dibuat cemilan
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+
+
+
+    <div class="Catalog" id="catalog">
+        <h1 class="header3">Cata<span>log</span></h1>
+        <div class="ctlg">
+            <div class="catalog1">
+                <img class="slide1" src="img/main-qimg-234a973653ce6dc59d0144db02862e56-pjlq.jpg" alt="">
+                <div class="cat1">
+                    <div class="tit1">
+                        <h1>White Broccoli</h1>
+                    </div>
+                    <div class="tekscat">
+                        sayuran jenis brokoli putih
+                        yang disebut kembang kol
+                        biasanya disebut cauli
+                    </div>
+                </div>
+                <div class="catalog2">
+                    <img src="img/broccolicat.jpg" alt="">
+                    <div class="cat2">
+                        <div class="tit2">
+                            <h1>Green Broccoli</h1>
+                        </div>
+                        <div class="tekscat1">
+                            sayuran hijau termasuk
+                            jenis kedalam kubis dan dapat di konsumsi
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog3">
+                    <img src="img/One Purple Cauliflower, Two Tasty Dishes_.jpg" alt="">
+                    <div class="cat3">
+                        <div class="tit3">
+                            <h1>Purpel Broccoli</h1>
+                        </div>
+                        <div class="tekscat2">
+                            sayur ukuran sedang,
+                            tumbuh daerah mendapat
+                            penyiaran matahari
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog4">
+                    <img src="img/Tipi di Cavolo_ le 10 varietà più diffuse in Italia e le ricette per portarle in tavola.jpg"
+                        alt="">
+                    <div class="cat4">
+                        <div class="tit4">
+                            <h1>Broc Romanesco</h1>
+                        </div>
+                        <div class="tekscat3">
+                            brokoli ini memiliki
+                            tekstur dan rasa
+                            lebih lembut
+                        </div>
+                    </div>
+                    <a href="#about">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById("radio" + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#header li").hover(function () {
+                    $(this).find("ul").slideToggle("fast");
+                });
+
+                var isVisible = false;
+                $("#button-contact").click(function() {
+                    if (!isVisible) {
+                        $(".sosmed").show();
+                        isVisible = true;
+                    } else {
+                        $(".sosmed").hide();
+                        isVisible = false;
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
